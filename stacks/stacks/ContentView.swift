@@ -13,30 +13,31 @@ struct ContentView: View {
         VStack {
             VStack{
                 HeaderView()
-                HStack {
-                    basicView(title: "Básico", price: "$9.99", subtitle: "Curso Incluido", textColor: .white, backColor: .green)
+                VStack {
+                    basicView(title: "Básico", price: "$9.99", subtitle: "Curso Incluido", textColor: .white, backColor: .green, icon: "star")
                     ZStack{
-                        basicView(title: "Carrera", price: "$29.99", subtitle: "Todo Incluido", textColor: .black, backColor: .gray)
+                        basicView(title: "Carrera", price: "$29.99", subtitle: "Todo Incluido", textColor: .black, backColor: .gray, icon: "timer")
+                        
                         Text("El mejor para empezar")
                             .font(.system(.caption, design: .rounded))
                             .foregroundColor(.white)
                             .padding()
                             .background(Color.orange)
-                            .offset(x:0, y:-80)
-                    }
+                            .offset(x:0, y:-110)
+                    }.offset(x: 0, y:-25)
                     
                 }.padding(.horizontal)
             }
             ZStack{
-                plusView(title: "Definitivo", price: "$99.99", subtitle: "Todos los cursos online", textColor: Color.white, backColor: Color.black)
+                basicView(title: "Definitivo", price: "$99.99", subtitle: "Todos los cursos online", textColor: .white, backColor: .black, icon: "lightbulb")
                 .padding()
                 Text("Become a master of the universe")
                 .font(.system(.caption, design: .rounded))
                 .foregroundColor(.white)
                 .padding()
                 .background(Color.orange)
-                .offset(x:0, y:-100)
-            }.padding(.vertical)
+                .offset(x:0, y:-110)
+            }.offset(x: 0, y:-60)
             Spacer()
         }
         
@@ -52,14 +53,16 @@ struct ContentView_Previews: PreviewProvider {
 struct HeaderView: View {
     var body: some View {
         HStack {
-            VStack(alignment: .center, spacing: 10){
+            VStack(alignment: .center, spacing: 20){
                 Text("Elige tu horario")
                     .font(.system(.largeTitle, design: .rounded))
                     .fontWeight(.black)
+                    
                 Text("de aprendizaje")
                     .font(.system(.largeTitle, design: .rounded))
                     .fontWeight(.black)
             }
+            .frame(minWidth: 0, maxWidth: .infinity, minHeight: 100)
             Spacer()
         }.padding()
     }
@@ -72,9 +75,16 @@ struct basicView: View {
     var subtitle: String
     var textColor: Color
     var backColor: Color
+    var icon: String?
     
     var body: some View {
         VStack{
+            if icon != nil{
+                Image(systemName: icon!)
+                .font(.system(size: 40))
+                .foregroundColor(.white)
+            }
+            
             Text(title)
                 .font(.system(.title, design: .rounded))
                 .fontWeight(.bold)

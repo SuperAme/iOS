@@ -32,13 +32,8 @@ struct ContentView: View {
                     Text("Eliminar")
                         .fontWeight(.bold)
                 }
-                .padding()
-                .background(Color.red)
-                //.clipShape(Circle())
-                .font(.largeTitle)
-                .foregroundColor(Color.white)
-                .cornerRadius(45)
             }
+            .buttonStyle(basicButtonStyle())
         }
     }
 }
@@ -47,4 +42,22 @@ struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
     }
+}
+
+struct basicButtonStyle: ButtonStyle{
+    func makeBody(configuration: Self.Configuration) -> some View {
+        configuration.label
+            .padding()
+            .background(LinearGradient(gradient: Gradient(colors: [Color.pink, Color.orange]), startPoint: .leading, endPoint: .trailing))
+            //.background(Color.red)
+            //.clipShape(Circle())
+            .font(.largeTitle)
+            .foregroundColor(Color.white)
+            .cornerRadius(45)
+            //.scaleEffect(configuration.isPressed ? 0.8 : 1.0)
+            .rotationEffect(configuration.isPressed ? .degrees(180) : .degrees(0))
+            
+    }
+    
+    
 }

@@ -10,18 +10,20 @@ import SwiftUI
 
 struct ContentView: View {
     
-    @State private var num:Int = 0
+    @State private var numClicks = 0
+    @State private var numClicksA = 0
+    @State private var numClicksB = 0
     
     var body: some View {
-        Button(action: {
-            self.num += 1
-        }){
-            Circle()
-            .frame(width: 90, height: 90)
-            .foregroundColor(Color.blue)
-            .overlay(Text("\(num)")
-                .font(.system(size: 60))
-                .foregroundColor(Color.white))
+        
+        VStack {
+            
+            Text("\(numClicks + numClicksA + numClicksB)")
+                .fontWeight(.bold)
+                .font(.system(size: 60, design: .rounded))
+            counterView(numClicks: $numClicks, btnColor: Color.red)
+            counterView(numClicks: $numClicksA, btnColor: Color.yellow)
+            counterView(numClicks: $numClicksB, btnColor: Color.green)
         }
         
         
@@ -41,5 +43,22 @@ struct ContentView: View {
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
+    }
+}
+
+struct counterView: View {
+    @Binding var numClicks:Int
+    var btnColor: Color
+    var body: some View {
+        Button(action: {
+            self.numClicks += 1
+        }){
+            Circle()
+                .frame(width: 90, height: 90)
+                .foregroundColor(btnColor)
+                .overlay(Text("\(numClicks)")
+                    .font(.system(size: 60))
+                    .foregroundColor(Color.white))
+        }
     }
 }

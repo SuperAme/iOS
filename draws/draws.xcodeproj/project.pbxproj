@@ -13,6 +13,8 @@
 		D6F5AE2D249848B40011E87E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D6F5AE2C249848B40011E87E /* Assets.xcassets */; };
 		D6F5AE30249848B40011E87E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D6F5AE2F249848B40011E87E /* Preview Assets.xcassets */; };
 		D6F5AE33249848B40011E87E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D6F5AE31249848B40011E87E /* LaunchScreen.storyboard */; };
+		D6F5AE3D24984DE40011E87E /* CurveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6F5AE3C24984DE40011E87E /* CurveView.swift */; };
+		D6F5AE3F24993EC10011E87E /* PieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6F5AE3E24993EC10011E87E /* PieView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		D6F5AE2F249848B40011E87E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		D6F5AE32249848B40011E87E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D6F5AE34249848B40011E87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D6F5AE3C24984DE40011E87E /* CurveView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurveView.swift; sourceTree = "<group>"; };
+		D6F5AE3E24993EC10011E87E /* PieView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PieView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +67,8 @@
 				D6F5AE31249848B40011E87E /* LaunchScreen.storyboard */,
 				D6F5AE34249848B40011E87E /* Info.plist */,
 				D6F5AE2E249848B40011E87E /* Preview Content */,
+				D6F5AE3C24984DE40011E87E /* CurveView.swift */,
+				D6F5AE3E24993EC10011E87E /* PieView.swift */,
 			);
 			path = draws;
 			sourceTree = "<group>";
@@ -148,7 +154,9 @@
 			files = (
 				D6F5AE27249848AD0011E87E /* AppDelegate.swift in Sources */,
 				D6F5AE29249848AD0011E87E /* SceneDelegate.swift in Sources */,
+				D6F5AE3D24984DE40011E87E /* CurveView.swift in Sources */,
 				D6F5AE2B249848AD0011E87E /* ContentView.swift in Sources */,
+				D6F5AE3F24993EC10011E87E /* PieView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

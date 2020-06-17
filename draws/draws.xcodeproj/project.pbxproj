@@ -15,6 +15,7 @@
 		D6F5AE33249848B40011E87E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D6F5AE31249848B40011E87E /* LaunchScreen.storyboard */; };
 		D6F5AE3D24984DE40011E87E /* CurveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6F5AE3C24984DE40011E87E /* CurveView.swift */; };
 		D6F5AE3F24993EC10011E87E /* PieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6F5AE3E24993EC10011E87E /* PieView.swift */; };
+		D6F5AE41249AD6B20011E87E /* ProgressIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6F5AE40249AD6B20011E87E /* ProgressIndicatorView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		D6F5AE34249848B40011E87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D6F5AE3C24984DE40011E87E /* CurveView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurveView.swift; sourceTree = "<group>"; };
 		D6F5AE3E24993EC10011E87E /* PieView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PieView.swift; sourceTree = "<group>"; };
+		D6F5AE40249AD6B20011E87E /* ProgressIndicatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressIndicatorView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +71,7 @@
 				D6F5AE2E249848B40011E87E /* Preview Content */,
 				D6F5AE3C24984DE40011E87E /* CurveView.swift */,
 				D6F5AE3E24993EC10011E87E /* PieView.swift */,
+				D6F5AE40249AD6B20011E87E /* ProgressIndicatorView.swift */,
 			);
 			path = draws;
 			sourceTree = "<group>";
@@ -155,6 +158,7 @@
 				D6F5AE27249848AD0011E87E /* AppDelegate.swift in Sources */,
 				D6F5AE29249848AD0011E87E /* SceneDelegate.swift in Sources */,
 				D6F5AE3D24984DE40011E87E /* CurveView.swift in Sources */,
+				D6F5AE41249AD6B20011E87E /* ProgressIndicatorView.swift in Sources */,
 				D6F5AE2B249848AD0011E87E /* ContentView.swift in Sources */,
 				D6F5AE3F24993EC10011E87E /* PieView.swift in Sources */,
 			);
